@@ -6,31 +6,23 @@
 }
 
 body {
-    width: 100vw;
+    width: auto;
     
 }
 
 /*---- TEXTER -----*/
 
 h1, h2 {
-    font-family: "Berlin Sans FB Demi Bold", sans-serif;
-    
+    font-family: "Berlin Sans FB Demi Bold", sans-serif;  
 }
-
-
 h1 {
-    font-size: 5em;
-    
+    font-size: 5em;   
 }
-
 h2 {
-    font-size: 3em;
-    
+    font-size: 3em;  
 }
-
 p {
   font-size: 3em;  
-    
 }
 
 /*-----------------*/
@@ -46,6 +38,14 @@ header {
 #menu {
     width: 100px;
     z-index: 3;
+    
+}
+
+.logo {
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    width: 230px;
     
 }
 
@@ -128,35 +128,45 @@ box-shadow: 0px 0px 22px -2px rgba(0,0,0,0.62);
 }
 
 .link {
-    height: 20%;
+    height: 22.5%;
     border-bottom: solid 5px #f19e29;
     border-right: solid 5px #f19e29;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 2em;
-    padding-left: 100px;
+    font-size: 1.8em;
+    padding-left: 40px;
+    padding-right: 40px;
     
+}
+
+@keyframes dropHeader {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .nav {
     height: 100vh;
-    min-width: 55vw;
-    width: auto;
-    
+    width: auto; 
     display: flex;
     flex-direction: column;
-    
-    background-color: #f1c40f;
-    
+    background-color: #f1c40f; 
     top: 0;
     left: 0;
-    
     position: fixed;
     z-index: 2;
-    
     display: none;
+    
+    /* Animationen */
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.1s;
         
 }
 
@@ -167,13 +177,19 @@ box-shadow: 0px 0px 22px -2px rgba(0,0,0,0.62);
     
 }
 
-/*
 #menu_filler {
-    height: 120px;
-    width: 55vw;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     
 }
-*/
+
+.back {
+    width: 100px;
+    
+}
 
 footer {
     height: 30px;
@@ -184,5 +200,14 @@ footer {
 
 .menu_toggle {
     display: block;
+    
+}
+
+@media all and (min-width: 750px) {
+    
+    body {
+        background-color: darkred;
+        
+    }
     
 }
