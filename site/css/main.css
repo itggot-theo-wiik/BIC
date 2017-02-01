@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: monospace;
     
 }
 
@@ -36,14 +37,20 @@ p {
 
 
 header {
-    width: 100%;
-    height: 50px;
-    background-color: #f1c40f; 
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    
+}
+
+#menu {
+    width: 100px;
+    z-index: 3;
     
 }
 
 .hero {
-    height: 700px;
+    height: 900px;
     width: 100%;
     background-image: url(../img/hero.jpg);
     background-size: cover;
@@ -74,7 +81,7 @@ header {
 }
 
 .icon {
-    width: 200px;
+    width: 400px;
     margin-bottom: 50px;
     
 }
@@ -104,11 +111,78 @@ box-shadow: 0px 0px 22px -2px rgba(0,0,0,0.62);
     min-height: 300px;
     margin-bottom: 200px;
     
+    padding: 60px;
+    margin-top: 60px;
+    
 }
+
+#citat {
+    text-align: left;
+    
+}
+
+#citat_av {
+    text-align: right;
+    margin-top: 60px;
+    
+}
+
+.link {
+    height: 20%;
+    border-bottom: solid 5px #f19e29;
+    border-right: solid 5px #f19e29;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2em;
+    padding-left: 100px;
+    
+}
+
+.nav {
+    height: 100vh;
+    min-width: 55vw;
+    width: auto;
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #f1c40f;
+    
+    top: 0;
+    left: 0;
+    
+    position: fixed;
+    z-index: 2;
+    
+    display: none;
+        
+}
+
+.dark {
+    width: auto;
+    height: 100vh;
+    background-color: aqua;
+    
+}
+
+/*
+#menu_filler {
+    height: 120px;
+    width: 55vw;
+    
+}
+*/
 
 footer {
     height: 30px;
     width: auto;
     background-color: #f19e29;
+    
+}
+
+.menu_toggle {
+    display: block;
     
 }
