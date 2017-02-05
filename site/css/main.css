@@ -68,6 +68,17 @@ header {
     
 }
 
+.aside {
+    display: none;
+    width: 300px;
+    background-color: #f1c40f;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+    
+}
+
 #marginizer {
     margin: 50px;
     
@@ -300,6 +311,58 @@ footer {
   and (-webkit-min-device-pixel-ratio: 3) { 
       
       
+}
+
+/* ----------- För asiden ----------- */
+@media all and (min-width: 1270px) {  
+    .aside {
+        display: block;
+        animation-name: aside;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-duration: 0.1s;
+        
+    }
+    
+    @keyframes aside {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    
+}
+
+/* ----------- SMALL ----------- */
+@media all and (max-width: 879px) {
+    
+    .icon {
+        width: 100px;
+        
+    }
+    
+    .logo {
+        width: 200px;
+        
+    }
+    
+    #menu {
+        width: 60px;
+        
+    }
+    
+    h1 {
+        font-size: 3em;
+        
+    }
+    
+    p {
+       font-size: 1.3em; 
+        
+    }
+    
 }
 
 /* ------  MELLAN  --------*/
