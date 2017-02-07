@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'Berlin Sans FB Demi';
+	src: url('BerlinSansFBDemi-Bold.eot');
+	src: url('BerlinSansFBDemi-Bold.eot?#iefix') format('embedded-opentype'),
+		url('BerlinSansFBDemi-Bold.woff') format('woff'),
+		url('BerlinSansFBDemi-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +26,7 @@ body {
 /*---- TEXTER -----*/
 
 h1, h2 {
-    font-family: "Berlin Sans FB Demi Bold", sans-serif;  
+    font-family: "Berlin Sans FB Demi", sans-serif;  
 }
 h1 {
     font-size: 5em;   
@@ -167,9 +177,12 @@ header {
 }
 
 .link {
-    height: 22.5%;
+    /*height: 22.5%;*/
+    height: 240px;
+    /*
     border-bottom: solid 5px #f19e29;
     border-right: solid 5px #f19e29;
+    */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,7 +203,8 @@ header {
 }
 
 .nav {
-    height: 100vh;
+    /*height: 100vh;*/
+    height: auto;
     width: auto; 
     display: flex;
     flex-direction: column;
@@ -201,6 +215,10 @@ header {
     z-index: 2;
     display: none;
     
+    -webkit-box-shadow: 3px 3px 0px 12px rgba(241,158,41,1);
+    -moz-box-shadow: 3px 3px 0px 12px rgba(241,158,41,1);
+    box-shadow: 3px 3px 0px 12px rgba(241,158,41,1);
+    
     /* Animationen */
     animation-name: dropHeader;
     animation-iteration-count: 1;
@@ -209,12 +227,19 @@ header {
         
 }
 
+#logo_container {
+    display: none;
+    
+}
+
+/*
 .dark {
     width: auto;
     height: 100vh;
     background-color: aqua;
     
 }
+*/
 
 #menu_filler {
     height: 10%;
@@ -294,7 +319,7 @@ header {
     
 }
 
-#TEMPORARY {
+#eraser {
     background-image: url(../img/tippex.png);
     background-position: center; 
     background-size: cover;
@@ -515,6 +540,7 @@ li {
     }
     
     #logo_container {
+        display: block;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -591,8 +617,8 @@ li {
 
     }
 
-    #TEMPORARY {
-        background-image: url(../img/thumb.png);
+    #erasor {
+        background-image: url(../img/eraser.jpg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
