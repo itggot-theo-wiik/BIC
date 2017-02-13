@@ -34,12 +34,31 @@ h1 {
 h2 {
     font-size: 3em;  
 }
-p {
+p, a {
   font-size: 3em;  
 }
 
 /*-----------------*/
 
+/*---- LÄNK STYLING -----*/
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: darkred;
+}
+
+/*-----------------*/
 
 header {
     position: fixed;
@@ -360,19 +379,91 @@ li {
     
 }
 
-/* Not used */
-/*@media all and (min-width: 800px)*/
-
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-      
-      
+#error_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
 }
+
+.error {
+    height: auto;
+    width: auto;
+    max-width: 360px;
+    background-color: #f19e29;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(241,196,15,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(241,196,15,1);
+    box-shadow: 10px 10px 0px 0px rgba(241,196,15,1);
+    
+}
+
+.warning {
+    height: 80px;
+    margin-right: 30px;
+    
+}
+
+.error_box {
+    
+}
+
+#error_box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    
+}
+
+.photos {
+    padding: 20px;
+    height: auto;
+    width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.photo_row {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.underrubrik {
+    font-size: 1em;
+    
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.product_photo {
+    width: 70%;
+    
+}
+
+
+/* ANVÄNDS INTE */
+/*@media all and (min-width: 800px)*/
 
 /* ----------- För asiden ----------- */
 @media all and (min-width: 1270px) {  
@@ -419,7 +510,7 @@ li {
         
     }
     
-    p {
+    p, a, li {
        font-size: 1.3em; 
         
     }
@@ -469,7 +560,7 @@ li {
         
     }
     
-    p {
+    p, a {
         font-size: 1.4em;
         
     }
@@ -706,6 +797,13 @@ li {
         margin-left: auto;
         margin-right: auto;
         
+    }
+    
+    .photo_row {
+        display: flex;
+        flex-direction: row;
+
+    
     }
     
 }
