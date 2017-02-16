@@ -137,6 +137,7 @@ header {
 .icon {
     width: 400px;
     margin-bottom: 50px;
+    transition: 1s ease;
     
 }
 
@@ -566,6 +567,12 @@ li {
         
     }
     
+    .bulletpoint:hover .icon {
+        width: 140px;
+        transition: 1s ease;
+        
+    }
+    
     h1 {
         font-size: 3em;
         
@@ -662,6 +669,12 @@ li {
         margin-right: 50px;
         margin-bottom: auto;
         margin-top: auto;
+        
+    }
+    
+    .bulletpoint:hover .icon {
+        width: 140px;
+        transition: 1s ease;
         
     }
     
@@ -819,10 +832,14 @@ li {
     }
     
     .description {
-        padding: 30px;
+        padding: 20px;
         
     }
     
+    .product_text {
+        font-size: 1.1em;
+        
+    } 
     .product_descriptions {
         display: block;
         display: flex;
@@ -909,6 +926,11 @@ li {
     
     #products {
         width: 80%;
+        
+    }
+    
+    .product_text {
+        font-size: 1.4em;
         
     }
     
