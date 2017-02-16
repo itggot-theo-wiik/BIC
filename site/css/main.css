@@ -44,10 +44,11 @@ p, a {
 a:link {
     color: black;
 }
-
+/*
 a:visited {
     color: black;
 }
+*/
 
 a:hover {
     color: darkred;
@@ -180,6 +181,14 @@ header {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: 150px;
+    
+    transition: ease 1s;
+    
+}
+
+#quote:hover {
+    padding: 80px;
+    transition: ease 1s;
     
 }
 
@@ -331,14 +340,14 @@ header {
 }
 
 #tippex {
-    background-image: url(../img/tippex.png);
+    background-image: url(../img/tippexs.png);
     background-position: center; 
     background-size: cover;
     
 }
 
-#eraser {
-    background-image: url(../img/tippex.png);
+#erasor {
+    background-image: url(../img/erasors.jpg);
     background-position: center; 
     background-size: cover;
     
@@ -353,6 +362,11 @@ footer {
     
     display: flex;
     flex-direction: column;
+    
+}
+
+.footer_link {
+    font-size: 1.2em;
     
 }
 
@@ -389,15 +403,14 @@ li {
 
 .error {
     height: auto;
-    width: auto;
-    max-width: 360px;
+    width: 500px;
     background-color: #f19e29;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
     
     -webkit-box-shadow: 10px 10px 0px 0px rgba(241,196,15,1);
     -moz-box-shadow: 10px 10px 0px 0px rgba(241,196,15,1);
@@ -413,6 +426,17 @@ li {
 
 .error_box {
     
+}
+
+.error_link {
+    font-size: 4em;
+    background-color: rgba(241,196,15,1);
+    
+}
+
+#error_title {
+        margin-bottom: 10px;
+        
 }
 
 #error_box1 {
@@ -533,7 +557,7 @@ li {
     }
     
     .logo {
-        width: 200px;
+        width: 150px;
         
     }
     
@@ -547,18 +571,18 @@ li {
         
     }
     
-    p, a, li {
+    p, a {
        font-size: 1.3em; 
         
     }
     
     .list_rubrik {
-        font-size: 4em;
+        font-size: 3em;
         
     }
     
     li {
-        font-size: 1.6em;
+        font-size: 1em;
         
     }
     
@@ -568,6 +592,28 @@ li {
     }
     .back {
         height: 50px;
+        
+    }
+    
+    .error {
+        width: 60%;
+        padding: 10px;
+        height: auto;
+        
+    }
+    
+    .error_link {
+        font-size: 2em;
+        
+    }
+    
+    .error_img_container {
+        display: none;
+        
+    }
+    
+    #error_title {
+        font-size: 2em;
         
     }
     
@@ -773,7 +819,7 @@ li {
     }
     
     .description {
-        padding: 15px;
+        padding: 30px;
         
     }
     
@@ -838,13 +884,24 @@ li {
     
     }
     
+    .error {
+        width: 300px;
+        padding: 20px;
+        
+    }
+    
+    .error_link {
+        font-size: 2em;
+        
+    }
+    
 }
 
 /* ------  STOR  --------*/
 @media all and (max-width: 3000px) and (min-width: 1300px) {
     
     #quote {
-        width: 70%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         
@@ -875,6 +932,15 @@ li {
         flex-direction: row;
 
     
+    }
+    
+    .nav {
+        width: 80%;
+        right: 0;
+
+        margin-right: auto;
+        margin-left: auto;
+        
     }
     
 }
