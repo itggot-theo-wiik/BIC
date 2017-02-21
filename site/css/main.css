@@ -489,6 +489,11 @@ li {
     
 }
 
+.img_name {
+    margin-top: 20px;
+    
+}
+
 .product_header {
     height: 500px;
     display: flex;
@@ -560,6 +565,11 @@ li {
     
     .logo {
         width: 150px;
+        
+    }
+    
+    .hero {
+        height: 90vh;
         
     }
     
