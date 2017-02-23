@@ -1027,6 +1027,22 @@ li {
         
     }
     
+    footer {
+        padding: 0;
+        
+    }
+    
+    .footer_links {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #first_list {
+        margin-left: 0;
+        
+    }
+    
     .link:hover {
         font-size: 2em;
         transition: 0.5s ease;
